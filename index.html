@@ -4,19 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ganesh | Creative Portfolio</title>
-    <!-- Modern Font: Poppins -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body data-theme="light">
-    <!-- Animated background gradient shapes -->
     <div class="circles">
         <div></div><div></div><div></div><div></div>
     </div>
 
-    <!-- Transparent Navigation -->
     <nav class="glass-nav">
         <div class="nav-brand">G/K</div>
         <ul class="nav-links">
@@ -32,7 +29,6 @@
     </nav>
 
     <main class="container">
-        <!-- Modern Hero Section -->
         <section id="about" class="glass-panel hero-section">
             <div class="badge">Welcome</div>
             <h1>I'm <span>Ganesh Kumar</span></h1>
@@ -43,37 +39,34 @@
             </div>
         </section>
 
-        <!-- Technical Skills: Colorful Tags -->
         <section id="skills" class="glass-panel">
             <h2 class="section-title">Technicals</h2>
             <div class="skills-flex">
-                <span class="tag html" data-aos="fade-up">HTML5</span>
-                <span class="tag css" data-aos="fade-up" data-aos-delay="100">CSS3</span>
-                <span class="tag js" data-aos="fade-up" data-aos-delay="200">JavaScript</span>
-                <span class="tag react" data-aos="fade-up" data-aos-delay="300">React</span>
-                <span class="tag git" data-aos="fade-up" data-aos-delay="400">Git/GitHub</span>
-                <span class="tag sheets" data-aos="fade-up" data-aos-delay="500">Google AppsScript</span>
+                <span class="tag html">HTML5</span>
+                <span class="tag css">CSS3</span>
+                <span class="tag js">JavaScript</span>
+                <span class="tag react">React</span>
+                <span class="tag git">Git/GitHub</span>
+                <span class="tag sheets">Google AppsScript</span>
             </div>
         </section>
 
-        <!-- Dynamic Projects Grid -->
         <section id="projects" class="glass-panel">
             <h2 class="section-title">My Projects</h2>
             <div class="projects-grid">
                 <div class="project-card">
                     <h3>Resume/Portfolio Web App</h3>
-                    <p>A sophisticated single-page app featuring dark mode, local storage for messages, and an authenticated admin panel[cite: 1].</p>
+                    <p>A sophisticated single-page app featuring dark mode, local storage for messages, and an authenticated admin panel.</p>
                     <span class="proj-tag">JavaScript</span>
                 </div>
                 <div class="project-card coming-soon">
                     <h3>React Components Cards</h3>
-                    <p>Building a dynamic UserList application using reusable React components[cite: 1].</p>
+                    <p>Building a dynamic UserList application using reusable React components.</p>
                     <span class="proj-tag">React</span>
                 </div>
             </div>
         </section>
 
-        <!-- Contact Form Section: Sleek and Minimal -->
         <section id="contact" class="glass-panel contact-section">
             <h2 class="section-title">Get in Touch</h2>
             <p class="subtitle">Have a project in mind or just want to connect? Send me a message!</p>
@@ -95,11 +88,9 @@
             <p id="formStatus" class="status-msg"></p>
         </section>
 
-        <!-- Admin Panel: Hidden, Dynamic Response View -->
         <section id="admin" class="glass-panel admin-section">
             <h2 class="section-title">Admin Hub</h2>
 
-            <!-- Admin Login Form (Visible) -->
             <div id="adminLoginSection">
                 <p>Login to securely view user submissions.</p>
                 <form id="adminLoginForm">
@@ -116,7 +107,6 @@
                 </form>
             </div>
 
-            <!-- Responses View (Initially Hidden) -->
             <div id="adminResponsesSection" class="hidden">
                 <div class="admin-responses-header">
                     <h3>Inbox (User Inquiries)</h3>
@@ -129,6 +119,6 @@
         </section>
     </main>
 
-    <script src="script.js"></script>
+    <script src="./script.js"></script>
 </body>
 </html>
