@@ -1,128 +1,134 @@
-
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    
-    <link rel="stylesheet" href="./style.css">
-    
-    <title>Pen</title>
-  </head>
-  <body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ganesh | Creative Portfolio</title>
+    <!-- Modern Font: Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body data-theme="light">
+    <!-- Animated background gradient shapes -->
+    <div class="circles">
+        <div></div><div></div><div></div><div></div>
+    </div>
 
-    <header> <!-- Container tag-->
-    <h1>Farhath Bhat</h1>
-    <p>Data and Software Engineer, I love to do technical trainings.</p>
-    </header>
-
-    <nav>  <!-- Container tag-->
-    <ul>
-      <li><a href="#education">Education</a></li>
-      <li><a href="#interships">Work Exp./Internships</a></li>
-      <li><a href="#">Projects</a></li>
-      <!-- sections that you want to have in your portfolio-->
-
-      <!--Mandatory sections-->
-      <li><a href="#contact-me">Contact Me</a></li>
-      <li><a href="#admin-login" id="admin-btn">Admin Login</a></li>
-      
-    </ul>
+    <!-- Transparent Navigation -->
+    <nav class="glass-nav">
+        <div class="nav-brand">G/K</div>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Work</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#admin">Admin</a></li>
+        </ul>
+        <button id="themeToggleBtn" class="btn-theme-toggle">
+            <span class="icon">🌙</span>
+        </button>
     </nav>
-    <button id="toggle-theme">Toggle Theme</button>
-    <section id="education" class="section-blocks"> <!--Container tag-->
-      
-    <h2>Education</h2>
 
-    <div class="section-item">
-    <h3>MS AI</h3>
-    <p>University of San Diego</p>
-    <p>2026</p>
-    </div>
+    <main class="container">
+        <!-- Modern Hero Section -->
+        <section id="about" class="glass-panel hero-section">
+            <div class="badge">Welcome</div>
+            <h1>I'm <span>Ganesh Kumar</span></h1>
+            <p>A Frontend Developer & Software Engineer passionate about crafting immersive, user-centric web experiences.</p>
+            <div class="cta-btns">
+                <a href="#projects" class="btn primary-btn">View My Work</a>
+                <a href="#contact" class="btn secondary-btn">Let's Talk</a>
+            </div>
+        </section>
 
-    <div class="section-item">
-    <h3>B.E Cse</h3>
-    <p>VTU, Bangalore</p>
-    <p>2021</p>
-    </div>
+        <!-- Technical Skills: Colorful Tags -->
+        <section id="skills" class="glass-panel">
+            <h2 class="section-title">Technicals</h2>
+            <div class="skills-flex">
+                <span class="tag html" data-aos="fade-up">HTML5</span>
+                <span class="tag css" data-aos="fade-up" data-aos-delay="100">CSS3</span>
+                <span class="tag js" data-aos="fade-up" data-aos-delay="200">JavaScript</span>
+                <span class="tag react" data-aos="fade-up" data-aos-delay="300">React</span>
+                <span class="tag git" data-aos="fade-up" data-aos-delay="400">Git/GitHub</span>
+                <span class="tag sheets" data-aos="fade-up" data-aos-delay="500">Google AppsScript</span>
+            </div>
+        </section>
 
-    <div class="section-item">
-    <h3>Non Med</h3>
-    <p>DPS</p>
-    <p>2016</p>
-    </div>
+        <!-- Dynamic Projects Grid -->
+        <section id="projects" class="glass-panel">
+            <h2 class="section-title">My Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <h3>Resume/Portfolio Web App</h3>
+                    <p>A sophisticated single-page app featuring dark mode, local storage for messages, and an authenticated admin panel[cite: 1].</p>
+                    <span class="proj-tag">JavaScript</span>
+                </div>
+                <div class="project-card coming-soon">
+                    <h3>React Components Cards</h3>
+                    <p>Building a dynamic UserList application using reusable React components[cite: 1].</p>
+                    <span class="proj-tag">React</span>
+                </div>
+            </div>
+        </section>
 
-    </section>
+        <!-- Contact Form Section: Sleek and Minimal -->
+        <section id="contact" class="glass-panel contact-section">
+            <h2 class="section-title">Get in Touch</h2>
+            <p class="subtitle">Have a project in mind or just want to connect? Send me a message!</p>
+            <form id="contactForm">
+                <div class="input-group">
+                    <input type="text" id="userName" required placeholder=" ">
+                    <label for="userName">Name</label>
+                </div>
+                <div class="input-group">
+                    <input type="email" id="userEmail" required placeholder=" ">
+                    <label for="userEmail">Email</label>
+                </div>
+                <div class="input-group full-width">
+                    <textarea id="userMessage" rows="5" required placeholder=" "></textarea>
+                    <label for="userMessage">Message</label>
+                </div>
+                <button type="submit" class="btn primary-btn submit-btn">Send Message 🚀</button>
+            </form>
+            <p id="formStatus" class="status-msg"></p>
+        </section>
 
-    <section id="interships" class="section-blocks"> <!--Container tag-->
-    <h2>Work Exp/ Internships</h2>
+        <!-- Admin Panel: Hidden, Dynamic Response View -->
+        <section id="admin" class="glass-panel admin-section">
+            <h2 class="section-title">Admin Hub</h2>
 
-    <div class="section-item">
-    <h3>Head of Curriculum</h3>
-    <p>Learning Zone</p>
-    <p>2021</p>
-    </div>
+            <!-- Admin Login Form (Visible) -->
+            <div id="adminLoginSection">
+                <p>Login to securely view user submissions.</p>
+                <form id="adminLoginForm">
+                    <div class="input-group">
+                        <input type="text" id="adminUsername" required placeholder=" ">
+                        <label for="adminUsername">Username</label>
+                    </div>
+                    <div class="input-group">
+                        <input type="password" id="adminPassword" required placeholder=" ">
+                        <label for="adminPassword">Password</label>
+                    </div>
+                    <button type="submit" class="btn secondary-btn">Authorize</button>
+                    <p id="loginError" class="error-msg"></p>
+                </form>
+            </div>
 
-    <div class="section-item">
-    <h3>Data Science Engineer</h3>
-    <p>Digital Platforms</p>
-    <p>2021</p>
-    </div>
+            <!-- Responses View (Initially Hidden) -->
+            <div id="adminResponsesSection" class="hidden">
+                <div class="admin-responses-header">
+                    <h3>Inbox (User Inquiries)</h3>
+                    <button id="logoutBtn" class="btn logout-btn">Logout</button>
+                </div>
+                <div id="responsesContainer">
+                    <p class="no-messages">Your inbox is empty.</p>
+                </div>
+            </div>
+        </section>
+    </main>
 
-    </section>
-
-    <!-- If you want to add more sections please add them and then continue with
-    Contact me and Admin login sections-->
-
-    <!--Contact Me section-->
-    <section id="contact-me" class="section-blocks">
-      <h2>Contact Me</h2>
-
-      <form id="contact-form"> <!--form validation-->
-        <div>
-        <label>Name:</label>
-        <input type="text" id="input-name" required> 
-        </div>
-
-        <div>
-        <label>Email:</label>
-        <input type="email" id="input-email" required>
-        </div>
-
-        <div>
-        <label>Message:</label>
-        <textarea id="input-msg" required></textarea>
-        </div>
-
-        <button type="submit">Submit</button>
-        
-      </form>
-      
-    </section>
-
-    <section id="admin-login" class="section-blocks">
-      <h2>Admin Login</h2>
-      <form id="admin-form">
-        <div>
-        <label>Username:</label>
-        <input type="text" id="input-username" required> 
-        </div>
-
-        <div>
-        <label>Password:</label>
-        <input type="password" id="input-password" required> 
-        </div>
-
-        <button>Submit</button>
-      </form>
-    </section>
-
-    <section id="user-responses" class="section-blocks">
-      <h2>User Responses</h2>
-      
-      <div id="user-messages">
-        
-      </div>
-      
-    </section>
-    
-    <script src="./script.js"></script>
-  </body>
+    <script src="script.js"></script>
+</body>
 </html>
